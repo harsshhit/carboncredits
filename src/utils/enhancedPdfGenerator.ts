@@ -1,13 +1,10 @@
 import jsPDF from 'jspdf';
-import type { CarbonCredit, RetirementCertificate } from '../types/carbonCredit';
+import type { RetirementCertificate } from '../types/carbonCredit';
 
 export const generateEnhancedPDF = (certificate: RetirementCertificate): void => {
   const doc = new jsPDF();
   
   // Set up colors - Change these for different themes
-  const royalGolden = '#d4af37';  // Keep golden or change to other colors
-  const royalBlack = '#0a0a0a';   // Keep black or change to white/blue/etc
-  const darkGray = '#2a2a2a';
   
   // Add background - Change RGB values for different background
   doc.setFillColor(10, 10, 10);  // Dark background (10,10,10) or white (255,255,255)
